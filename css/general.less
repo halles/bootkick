@@ -1,0 +1,18 @@
+#header,
+#content-wrap,
+#footer{
+	& > .wrap{
+		width: @siteWidth;
+		.container-fixed;
+	}
+}
+
+section.content{
+	#grid > .core > .span(9);
+	float: left;
+}
+
+aside{
+	#grid > .core > .span(3);
+	float: right;
+}
