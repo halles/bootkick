@@ -2,17 +2,16 @@
 #content-wrap,
 #footer{
 	& > .wrap{
-		width: @siteWidth;
-		.container-fixed;
+		.column-container(@gridColumns, @gridColumnWidth, @gridGutterWidth)
 	}
 }
 
 section.content{
-	#grid > .core > .span(9);
+	.columns(9);
 	float: left;
 }
 
 aside{
-	#grid > .core > .span(3);
+	.columns(3);
 	float: right;
 }
