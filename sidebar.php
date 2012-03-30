@@ -1,4 +1,4 @@
-<aside id="sidebar">
+<aside class="sidebar">
 	<?php if(!dynamic_sidebar()): ?>
 		
 		<div id="search" class="widget-container widget_search">
