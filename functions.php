@@ -99,6 +99,7 @@ class BootKick{
 		/** Scripts **/
 		wp_register_script( 'html5', 'http://html5shim.googlecode.com/svn/trunk/html5.js');
 		wp_register_script( 'less.js', get_bloginfo('template_url').'/lib/less.js/dist/less-1.3.0.min.js');
+		wp_register_script( 'less.force-recompile.js', get_bloginfo('template_url').'/js/less.force-recompile.js', array('less.js', 'jquery'));
 		
 	}
 	
@@ -133,6 +134,7 @@ class BootKick{
 			wp_enqueue_script( 'jquery' );
 			wp_enqueue_script( 'html5' );
 			wp_enqueue_script( 'less.js' );
+			wp_enqueue_script( 'less.force-recompile.js' );
 		
 		}elseif(!is_admin() && in_array( $GLOBALS['pagenow'], array( 'wp-login.php', 'wp-register.php' ))){
 		
