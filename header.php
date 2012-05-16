@@ -7,7 +7,7 @@
 </head>
 <body <?php body_class(); ?>>
 	
-<div class="page-wrap">
+<div id="page-wrapper">
 	<header id="header">
 		<div class="wrap">
 			<hgroup>
@@ -25,5 +25,5 @@
 		</div>
 	</header>
 	
-	<div id="content-wrap">
-		<div class="wrap">
+	<div id="content-wrapper">
+		<div id="content-subwrapper">

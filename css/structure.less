@@ -1,7 +1,12 @@
 #header,
-#content-wrap,
 #footer{
 	& > .wrap{
+		.column-container(@gridColumns, @gridColumnWidth, @gridGutterWidth)
+	}
+}
+
+#content-wrapper{
+	& > #content-subwrapper{
 		.column-container(@gridColumns, @gridColumnWidth, @gridGutterWidth)
 	}
 }
