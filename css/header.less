@@ -12,36 +12,36 @@
 	#main-nav{
 		width: 100%;
 		background: @mainNavBackground;
-		div{
+		.menu{
 			width: 100%;
 			ul{
 				max-width: none;
 				&.children{ display: none; }
-				li{
-					display: inline;
-					a{
-						height: @mainNavItemHeight;
-						line-height: @mainNavItemHeight;
-						padding: @mainNavItemPadding;
-						display: inline-block;
-						*display: inline;
-						*zoom: 1;
-						text-decoration: none;
-						font-size: @mainNavItemFontSize;
-						&:hover{
-							padding: @mainNavItemHoverPadding;
-							border-width: @mainNavItemHoverBorderWidth;
-							border-color: @mainNavItemHoverBorderColor;
-							border-style: @mainNavItemHoverBorderStyle;
-						}
-					}
-					&.current_page_item a{
-						padding: @mainNavItemCurrentPadding;
-						border-width: @mainNavItemCurrentBorderWidth;
-						border-color: @mainNavItemCurrentBorderColor;
-						border-style: @mainNavItemCurrentBorderStyle;
-					}
+			}
+		}
+		li{
+			display: inline;
+			a{
+				height: @mainNavItemHeight;
+				line-height: @mainNavItemHeight;
+				padding: @mainNavItemPadding;
+				display: inline-block;
+				*display: inline;
+				*zoom: 1;
+				text-decoration: none;
+				font-size: @mainNavItemFontSize;
+				&:hover{
+					padding: @mainNavItemHoverPadding;
+					border-width: @mainNavItemHoverBorderWidth;
+					border-color: @mainNavItemHoverBorderColor;
+					border-style: @mainNavItemHoverBorderStyle;
 				}
+			}
+			&.current_page_item a{
+				padding: @mainNavItemCurrentPadding;
+				border-width: @mainNavItemCurrentBorderWidth;
+				border-color: @mainNavItemCurrentBorderColor;
+				border-style: @mainNavItemCurrentBorderStyle;
 			}
 		}
 	}
