@@ -3,3 +3,12 @@
 	*display: inline;
 	*zoom: 1;
 }
+
+.column-content(@columns: 2){
+	-moz-column-count: @columns;
+	-moz-column-gap: @gridGutterWidth;
+	-webkit-column-count: @columns;
+	-webkit-column-gap: @gridGutterWidth;
+	column-count: @columns;
+	column-gap: @gridGutterWidth;
+}
