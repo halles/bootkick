@@ -248,6 +248,80 @@
 	}
 }
 
-
-
 #typography > .global-typography;
+
+.post-content-formats{
+	/** Entry Content Style **/
+	
+	h1, h2, h3, h4, h5, h6 {
+		margin-top: 0.5em;
+		margin-bottom: 1em;
+	}
+
+	p{
+		line-height: 1.6em;
+		margin: 0 0 1em 0;
+	}
+	
+	.wp-caption{
+		font-size: 10px;
+		font-style: oblique;
+		text-align: center;
+		border: 1px solid #E1E1E1;
+		padding: 2px;
+		margin: 10px;
+		p{
+			margin: -4px 0 0 0;
+			padding: 0;
+			color: gray;
+		}
+		img{
+			margin: 5px 5px 0 5px;
+		}
+		&.alignnone{
+			margin: 10px 0;
+		}
+		&.aligncenter{
+			margin: 10px auto;
+		}
+		&.alignleft{
+			float: left;
+			margin-left: 0;
+		}
+		&.alignright{
+			float: right;
+			margin-right: 0;
+		}
+	}
+	
+	img{
+		margin: 0px;
+		&.size-thumbnail,
+		&.size-thumbnail.alignnone{
+			margin: 10px;
+		}
+		&.size-full{
+			max-width: 100%;
+			height: auto;
+		}
+		&.alignnone{
+			margin: 0;
+		}
+		&.aligncenter{
+			margin: 0px auto;
+			display: block;
+		}
+		&.alignleft{
+			float: left;
+			margin-right: 10px;
+		}
+		&.alignright{
+			float: left;
+			margin-left: 10px;
+			float: right;
+			margin-right: 0;
+		}
+	}
+
+}
+
