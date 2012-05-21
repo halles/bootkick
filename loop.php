@@ -10,6 +10,6 @@
 
 <?php else : ?>
 
-	<h2 class="center"><?php _e('Lo siento, no pudimos encontrar lo que buscas', BootKick::$textDomain); ?></h2>
+	<?php echo get_template_part('loop', 'notfound'); ?>
 
 <?php endif; ?>

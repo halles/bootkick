@@ -230,14 +230,6 @@
 			content: "";
 		}
 		
-		// Addresses
-		address {
-			display: block;
-			margin-bottom: @baseLineHeight;
-			line-height: @baseLineHeight;
-			font-style: normal;
-		}
-		
 		// Misc
 		small {
 			font-size: 100%;
@@ -250,78 +242,125 @@
 
 #typography > .global-typography;
 
-.post-content-formats{
-	/** Entry Content Style **/
-	
-	h1, h2, h3, h4, h5, h6 {
-		margin-top: 0.5em;
-		margin-bottom: 1em;
+.post-formats(){
+
+	.post-container{
+		margin-bottom: 70px;
+		.clearfix;
+		.post-header{
+			margin-bottom: 20px;
+			font-size: 85%;
+			h1{
+				margin-bottom: 10px;
+				a{ text-decoration: none; }
+			}
+			time, address{
+				.inline-block;
+			}
+		}
 	}
 
-	p{
-		line-height: 1.6em;
-		margin: 0 0 1em 0;
-	}
+	.post-content{
+		/** Entry Content Style **/
+		
+		h1, h2, h3, h4, h5, h6 {
+			margin-top: 20px;
+			margin-bottom: 20px;
+		}
 	
-	.wp-caption{
-		font-size: 10px;
-		font-style: oblique;
-		text-align: center;
-		border: 1px solid #E1E1E1;
-		padding: 2px;
-		margin: 10px;
 		p{
-			margin: -4px 0 0 0;
-			padding: 0;
-			color: gray;
+			line-height: 1.6em;
+			margin: 0 0 1em 0;
 		}
+		
+		.wp-caption{
+			font: @captionFont;
+			text-align: center;
+			border: @captionBorder;
+			padding: @captionPadding;
+			margin: @captionMargin;
+			.wp-caption-text{
+				margin: 0;
+				padding: 0;
+				color: @captionColor;
+			}
+			img{
+				margin: 0;
+			}
+			&.alignnone{
+				margin: @captionMargin 0;
+			}
+			&.aligncenter{
+				margin: @captionMargin auto;
+			}
+			&.alignleft{
+				float: left;
+				margin-left: 0;
+			}
+			&.alignright{
+				float: right;
+				margin-right: 0;
+			}
+		}
+		
 		img{
-			margin: 5px 5px 0 5px;
+			margin: 0px;
+			&.size-thumbnail,
+			&.size-thumbnail.alignnone{
+				margin: @imageMargin;
+			}
+			&.size-full{
+				max-width: 100%;
+				height: auto;
+			}
+			&.alignnone{
+				margin: 0;
+			}
+			&.aligncenter{
+				margin: 0px auto;
+				display: block;
+			}
+			&.alignleft{
+				float: left;
+				margin-right: @imageMargin;
+			}
+			&.alignright{
+				float: left;
+				margin-left: @imageMargin;
+				float: right;
+				margin-right: 0;
+			}
 		}
-		&.alignnone{
-			margin: 10px 0;
+		
+		pre, code{
+			margin-bottom: 2em;
+			font-family: @fixedWidthFontFamily;
+			font-size:   @fixedWidthFontSize;
+			font-weight: @fixedWidthFontWeight;
+			font-weight: inherit;
+			overflow-x: auto; /* Use horizontal scroller if needed; for Firefox 2, not needed in Firefox 3 */
+			white-space: pre-wrap; /* css-3 */
+			white-space: -moz-pre-wrap !important; /* Mozilla, since 1999 */
+			white-space: -pre-wrap; /* Opera 4-6 */
+			white-space: -o-pre-wrap; /* Opera 7 */
+			/*messes up flow* width: 99%; /* remove horizontal scroll-bar when viewing in IE7 */
+			word-wrap: break-word; /* Internet Explorer 5.5+ */
 		}
-		&.aligncenter{
-			margin: 10px auto;
+		
+		pre{
+			border: 1px solid darken(@grayLighter, 10%);
+			padding: 1em;
 		}
-		&.alignleft{
-			float: left;
-			margin-left: 0;
+		
+		code{
+			background:  darken(@grayLighter, 10%);
+			padding: 2px;
 		}
-		&.alignright{
-			float: right;
-			margin-right: 0;
+		
+		sub, sup, small{
+			font-size: 85%;
 		}
-	}
 	
-	img{
-		margin: 0px;
-		&.size-thumbnail,
-		&.size-thumbnail.alignnone{
-			margin: 10px;
-		}
-		&.size-full{
-			max-width: 100%;
-			height: auto;
-		}
-		&.alignnone{
-			margin: 0;
-		}
-		&.aligncenter{
-			margin: 0px auto;
-			display: block;
-		}
-		&.alignleft{
-			float: left;
-			margin-right: 10px;
-		}
-		&.alignright{
-			float: left;
-			margin-left: 10px;
-			float: right;
-			margin-right: 0;
-		}
 	}
 
 }
-
