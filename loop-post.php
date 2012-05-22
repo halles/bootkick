@@ -4,8 +4,6 @@
 	
 	<?php echo get_template_part('loop', 'post-content'); ?>
 	
-	<?php echo get_template_part('loop', 'post-pagination'); ?>
-	
 	<?php echo get_template_part('loop', 'post-footer'); ?>
 	
 </article>

@@ -246,7 +246,8 @@
 
 	.post-container{
 		margin-bottom: 70px;
-		.clearfix;
+		width: 100%;
+		float: left;
 		.post-header{
 			margin-bottom: 20px;
 			font-size: 85%;
@@ -258,10 +259,16 @@
 				.inline-block;
 			}
 		}
+		.post-footer{
+			width: 100%;
+			float: left;		
+		}
 	}
 
 	.post-content{
-		/** Entry Content Style **/
+		
+		width: 100%;
+		float: left;
 		
 		h1, h2, h3, h4, h5, h6 {
 			margin-top: 20px;
@@ -361,6 +368,12 @@
 			font-size: 85%;
 		}
 	
+	}
+	
+	.post-pagination{
+		.inline-block;
+		width: 100%;
+		float: left;
 	}
 
 }
