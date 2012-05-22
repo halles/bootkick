@@ -1,5 +1,5 @@
 <aside class="sidebar">
-	<?php if(!dynamic_sidebar()): ?>
+	<?php if(!dynamic_sidebar('main')): ?>
 		
 		<div id="search" class="widget-container widget_search">
 			<?php get_search_form(); ?>
@@ -20,7 +20,6 @@
 				<?php wp_meta(); ?>
 			</ul>
 		</div>
-		
 		
 	<?php endif; ?>
 </aside>

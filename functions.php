@@ -12,6 +12,7 @@ class BootKick{
 	
 		self::themeSupport();
 		add_action( 'init', self::init());
+		add_action( 'widgets_init', array(__CLASS__, 'registerSidebars' ));
 		
 		add_action( 'wp_print_styles', array(__CLASS__, 'enqueueStyles'));
 		add_filter( 'style_loader_tag', array(__CLASS__, 'enqueueLessStyles'), 5, 2);
@@ -39,7 +40,32 @@ class BootKick{
 		add_theme_support( 'post-thumbnails' );
 		
 	}
-
+	
+	function registerSidebars(){
+	
+		$sidebars = array(
+			'main' => __('Main Sidebar', self::$textDomain),
+			'footer-1' => __('Footer 1', self::$textDomain),
+			'footer-2' => __('Footer 2', self::$textDomain),
+			'footer-3' => __('Footer 3', self::$textDomain),
+		);
+		
+		foreach($sidebars as $id => $name){
+			$args = array(
+				'name'          => $name,
+				'id'            => $id,
+				'description'   => '',
+				'before_widget' => '<li id="%1$s" class="widget %2$s">',
+				'after_widget'  => '</li>',
+				'before_title'  => '<h2 class="widgettitle">',
+				'after_title'   => '</h2>'
+			);
+			
+			register_sidebar($args);
+		}
+		
+	}
+	
 	/** Custom Types **/
 
 	function customTypes(){
