@@ -1,5 +1,7 @@
 <?php
 
+require( dirname( __FILE__ ) . '/theme-options/theme-options.php' );
+
 class BootKick{
 		
 	private static $name = 'BootKick';
