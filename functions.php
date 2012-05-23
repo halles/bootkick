@@ -214,6 +214,7 @@ class BootKick{
 	/** Comment Template **/
 	
 	function commentCallback( $comment, $args, $depth ){
+		$GLOBALS['comment'] = $comment;
 		switch ( $comment->comment_type ) :
 			case 'pingback' :
 				if($template = locate_template('comments-template-pingback.php')){
