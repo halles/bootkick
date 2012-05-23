@@ -1,3 +1,27 @@
 <ol class="commentlist">
-	<?php wp_list_comments(array('callback' => array('BootKick', 'commentCallback'))); ?>
+	<?php
+	
+		$args = array(
+			'style'             => 'ol',
+			'callback'          => array('BootKick', 'commentCallback'),
+			'type'              => 'comment',
+		);
+	
+		wp_list_comments($args);
+		
+	?>
+</ol>
+
+<ol class="pinglist">
+	<?php
+	
+		$args = array(
+			'style'             => 'ol',
+			'callback'          => array('BootKick', 'commentCallback'),
+			'type'              => 'pings',
+		);
+	
+		wp_list_comments($args);
+		
+	?>
 </ol>
