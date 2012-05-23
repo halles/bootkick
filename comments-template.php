@@ -1,5 +1,5 @@
 <li <?php comment_class(); ?> id="li-comment-<?php comment_ID(); ?>">
-<article id="comment-<?php comment_ID(); ?>" class="comment">
+<article id="comment-<?php comment_ID(); ?>">
 	
 	<footer class="comment-meta">
 		<div class="comment-author vcard">
