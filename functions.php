@@ -210,6 +210,29 @@ class BootKick{
 		}
 		return $tag;
 	}
+	
+	/** Comment Template **/
+	
+	function commentCallback( $comment, $args, $depth ){
+		switch ( $comment->comment_type ) :
+			case 'pingback' :
+				if($template = locate_template('comments-template-pingback.php')){
+					include($template);
+				}
+				break;
+			case 'trackback' :
+				if($template = locate_template('comments-template-trackback.php')){
+					include($template);
+				}
+				break;
+			default :
+				if($template = locate_template('comments-template.php')){
+					include($template);
+				}
+				break;
+		endswitch;
+	}
+
 
 }
 

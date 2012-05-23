@@ -1,0 +1,1 @@
+<p class="comments-closed"><?php _e( 'Comments are closed.', BootKick::$textDomain ); ?></p>

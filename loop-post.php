@@ -6,4 +6,6 @@
 	
 	<?php echo get_template_part('loop', 'post-footer'); ?>
 	
+	<?php echo get_template_part('loop', 'post-comments'); ?>
+	
 </article>

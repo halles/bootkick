@@ -5,8 +5,6 @@
 
 	<?php echo get_template_part('loop'); ?>
 	
-	<?php echo get_template_part('loop', 'post-comments'); ?>
-	
 </div>	
 </section>
 	
