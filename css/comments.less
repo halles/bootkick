@@ -1,0 +1,31 @@
+.comments(){
+
+	margin: 30px 0;
+	float: left;
+
+	.comments-title {
+		font-weight: normal;
+		margin-bottom: 10px;
+		em{
+			font-weight: bold;
+			font-style: normal;
+		}
+		border-bottom: @grayLighter 1px solid;
+	}
+
+	ol, ul{
+		list-style: none;
+	}
+	
+	.comment-list{
+		list-style: none;
+		margin-left: 0;
+		li ol.children, li ul.children{
+			margin-left: 70px;
+			li ol.children, li ul.children{
+				margin-left: 40px;
+			}
+		}
+	}
+		
+}

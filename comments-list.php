@@ -1,4 +1,4 @@
-<ol class="commentlist">
+<ol class="comment-list">
 	<?php
 	
 		$args = array(
