@@ -163,6 +163,9 @@ class BootKick{
 			wp_enqueue_script( 'html5' );
 			wp_enqueue_script( 'less.js' );
 			wp_enqueue_script( 'less.force-recompile.js' );
+			
+			if ( is_singular() && get_option( 'thread_comments' ) )
+				wp_enqueue_script( 'comment-reply' );
 		
 		}elseif(!is_admin() && in_array( $GLOBALS['pagenow'], array( 'wp-login.php', 'wp-register.php' ))){
 		
