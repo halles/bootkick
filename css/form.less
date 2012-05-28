@@ -1,0 +1,105 @@
+
+.form-styles(){
+
+	label {
+		color: @labelColor;
+	  display: block;
+	  font-family: @labelFontFamily;
+		font-size: @labelFontSize;
+		font-weight: @labelFontWeight;
+		margin: 0 0 5px;
+	}
+	
+	fieldset {
+		border: 1px solid #ccc;
+		border-bottom-width: 2px;
+		border-top-width: 2px;
+		margin: 0 0 10px;
+		padding: 20px;
+	}
+	
+	legend {
+	  font-size: 18px;
+		font-weight: bold;
+		margin-left: -10px;
+		padding: 0 10px;
+	}
+	
+	input, 
+	textarea, 
+	select {
+		color: @fieldColor;
+		font-family: @fieldFontFamily; 
+		font-size: @fieldFontSize;
+		background: @fieldBackground;
+		border: 1px solid @fieldBorderColor;
+		.border-radius(3px);
+		color: @gray;
+		margin: 0 0 10px;
+		padding: 5px;
+	}
+	
+	input:focus, 
+	textarea:focus, 
+	select:focus {
+		.drop-shadow(0, 1px, 1px, 0.25);
+		border: 1px solid #aaa;
+	}
+	
+	input[type=radio],
+	input[type=checkbox] {
+		border: 0;
+		margin: 0;
+		padding: 0;
+	}
+	
+	input[type="radio"] {
+		vertical-align: text-bottom;
+	}
+	
+	input[type="checkbox"] {
+		vertical-align: bottom;
+	}
+	
+	input[type=submit] {
+	  border: 1px solid @submitColor;
+		#gradient > .vertical (@submitColorHighlite, @submitColor);
+		.border-radius(3px);
+		.drop-shadow(0, 1px, 1px, 0.3);
+	  .inline-block;
+	  color: #fff;
+	  cursor: hand;
+	  cursor: pointer;
+	  font-weight: @labelFontWeight;
+		margin: 0 2px;
+		padding: 5px;
+		text-align: center;
+		text-shadow: 0 1px 1px #000;
+		text-shadow: 0 1px 1px rgba(0,0,0,.3);
+		vertical-align: baseline;
+		&:hover,
+		&:focus{
+			#gradient > .vertical (@submitColorHover, @submitColor);
+		}
+		&:active{
+			#gradient > .vertical (@submitColorActive, @submitColor);
+			position: relative;
+			top: 1px;	
+		}
+	}
+	
+	textarea {
+		background: #fff;
+		height: 120px;
+		overflow: auto;
+		padding: 5px;
+	}
+	
+	button {
+	  overflow: visible;
+	  width: auto; 
+	}
+	
+}
+
+.form-styles;
