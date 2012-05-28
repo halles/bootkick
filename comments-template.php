@@ -11,7 +11,7 @@
 				echo get_avatar( $comment, $avatar_size );
 
 				/* translators: 1: comment author, 2: date and time */
-				printf( __( '%1$s on %2$s <span class="says">dijo:</span>', BootKick::$textDomain ),
+				printf( __( '%1$s el %2$s <span class="says">dijo:</span>', BootKick::$textDomain ),
 					sprintf( '<cite class="fn">%s</span>', get_comment_author_link() ),
 					sprintf( '<a href="%1$s"><time pubdate datetime="%2$s">%3$s</time></a>',
 						esc_url( get_comment_link( $comment->comment_ID ) ),
@@ -36,7 +36,7 @@
 	</div>
 
 	<div class="reply">
-		<?php comment_reply_link( array_merge( $args, array( 'reply_text' => __( 'Responder a <span>&darr;</span>', BootKick::$textDomain ), 'depth' => $depth, 'max_depth' => $args['max_depth'] ) ) ); ?>
+		<?php comment_reply_link( array_merge( $args, array( 'reply_text' => __( '<span>&larr;</span> Responder a', BootKick::$textDomain ), 'depth' => $depth, 'max_depth' => $args['max_depth'] ) ) ); ?>
 	</div>
 	
 </article>

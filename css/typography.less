@@ -259,9 +259,39 @@
 				.inline-block;
 			}
 		}
+		.post-meta{
+			font-size: 11px;
+		}
 		.post-footer{
 			width: 100%;
-			float: left;		
+			float: left;
+		}
+		.post-pagination{
+			float: left;
+			width: 100%;
+			text-align: center;
+			padding: 10px 0;
+			a{
+				text-decoration: none;
+				padding: 2px 4px;
+				background: @grayLighter;
+				&:hover{
+					background: darken(@grayLighter,10%);
+				}
+			}
+		}
+		.post-taxonomy{
+			width: 100%;
+			float: left;
+			border-top: 1px solid darken(@grayLighter,10%);
+			border-bottom: 1px solid darken(@grayLighter,10%);
+			background: @grayLighter;
+			padding: 10px 0px;
+			font-size: 12px;
+			margin: 10px 0;
+			div{
+				padding: 0 10px;
+			}
 		}
 	}
 
@@ -271,7 +301,6 @@
 		float: left;
 		
 		h1, h2, h3, h4, h5, h6 {
-			margin-top: 20px;
 			margin-bottom: 20px;
 		}
 	
