@@ -12,6 +12,8 @@
 	?>
 </ol>
 
+<h4 class="pinglist-title">Pings & Trackbacks</h4>
+
 <ol class="pinglist">
 	<?php
 	

@@ -6,11 +6,11 @@
 	.comments-title {
 		font-weight: normal;
 		margin-bottom: 10px;
+		border-bottom: @grayLighter 1px solid;
 		em{
 			font-weight: bold;
 			font-style: normal;
 		}
-		border-bottom: @grayLighter 1px solid;
 	}
 
 	ol, ul{
@@ -20,10 +20,83 @@
 	.comment-list{
 		list-style: none;
 		margin-left: 0;
+		.comment{
+			padding: 10px 0 10px 10px;
+			border-top: 2px solid @grayLighter;
+			margin-bottom: 5px;
+			article{
+				position: relative;
+			}
+			&.depth-1:first-child{
+				border-top: none;
+			}
+		}
+		.comment-meta{
+			font-size: 11px;
+			font-weight: bold;
+			.comment-author{
+				height: 30px;
+				img{
+					margin-right: 20px;
+					float: left;
+				}
+				.fn{
+					float: left;
+				}
+			}
+		}
+		.comment-content{
+			margin-left: 80px;
+			width: 75%;
+			p, pre, code, ul, ol, dl, address, div, span, table{
+				font-size: 12px;
+			}
+			sub, sup{
+				font-size: 90%;
+			}
+		}
 		li ol.children, li ul.children{
-			margin-left: 70px;
+			margin-left: 80px;
+			.comment{
+				padding: 10px 0 10px 0px;
+			}
+			.comment-content{
+				margin-left: 50px;
+			}
 			li ol.children, li ul.children{
-				margin-left: 40px;
+				margin-left: 50px;
+			}
+		}
+		.reply{
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			text-align: right;
+			font-size: 10px;
+			font-weight: bold;
+			a{ text-decoration: none; }
+		}
+	}
+	
+	.pinglist-title{
+		padding: 5px 10px;
+		border-bottom: 1px solid @grayLighter;
+		margin-top: 20px;	
+	}
+	
+	.pinglist{
+		list-style: none;
+		padding: 0;
+		margin: 10px 0 20px 5px;
+		li{
+			padding: 5px;
+			p{
+				font-size: 12px;
+				margin-bottom: 0;
+			}
+			.edit-link{
+				font-size: 10px;
+				font-weight: bold;
 			}
 		}
 	}
