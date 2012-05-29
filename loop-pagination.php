@@ -4,10 +4,10 @@
 		<?php wp_paginate(); ?>
 	<?php else: ?>
 		<div class="pagination">
-			<div class="pag-previous">
+			<div class="prev">
 				<?php next_posts_link( __( '‹‹ Artículos Anteriores', BootKick::$textDomain ) ); ?>
 			</div>
-			<div class="pag-next">
+			<div class="next">
 				<?php previous_posts_link( __( 'Artículos Nuevos ››', BootKick::$textDomain ) ); ?>
 			</div>
 		</div>		

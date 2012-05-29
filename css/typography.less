@@ -399,6 +399,31 @@
 	
 	}
 	
+	.pagination{
+		width: 100%;
+		float: left;
+		text-align: center;
+		margin: 30px 0;
+		.prev a,
+		.next a{
+			font-size: 16px;
+			padding: 10px;
+			text-decoration: none;
+			background: @grayLighter;
+			.border-radius(6px);
+			color: black;
+			&:hover{
+				background: darken(@grayLighter, 5%);
+			}	
+		}
+		.prev{
+			float: left;
+		}
+		.next{
+			float: right;
+		}
+	}
+	
 	.post-pagination{
 		.inline-block;
 		width: 100%;
