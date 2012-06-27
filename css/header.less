@@ -9,40 +9,41 @@
 	hgroup{
 		height: @headerHGroupHeight;
 	}
-	#main-nav{
+}
+
+#main-nav{
+	width: @mainNavWidth;
+	background: @mainNavBackground;
+	.menu{
 		width: 100%;
-		background: @mainNavBackground;
-		.menu{
-			width: 100%;
-			ul{
-				max-width: none;
-				&.children{ display: none; }
+		ul{
+			max-width: none;
+			&.children{ display: none; }
+		}
+	}
+	li{
+		display: inline;
+		a{
+			height: @mainNavItemHeight;
+			line-height: @mainNavItemHeight;
+			padding: @mainNavItemPadding;
+			display: inline-block;
+			*display: inline;
+			*zoom: 1;
+			text-decoration: none;
+			font-size: @mainNavItemFontSize;
+			&:hover{
+				padding: @mainNavItemHoverPadding;
+				border-width: @mainNavItemHoverBorderWidth;
+				border-color: @mainNavItemHoverBorderColor;
+				border-style: @mainNavItemHoverBorderStyle;
 			}
 		}
-		li{
-			display: inline;
-			a{
-				height: @mainNavItemHeight;
-				line-height: @mainNavItemHeight;
-				padding: @mainNavItemPadding;
-				display: inline-block;
-				*display: inline;
-				*zoom: 1;
-				text-decoration: none;
-				font-size: @mainNavItemFontSize;
-				&:hover{
-					padding: @mainNavItemHoverPadding;
-					border-width: @mainNavItemHoverBorderWidth;
-					border-color: @mainNavItemHoverBorderColor;
-					border-style: @mainNavItemHoverBorderStyle;
-				}
-			}
-			&.current_page_item a{
-				padding: @mainNavItemCurrentPadding;
-				border-width: @mainNavItemCurrentBorderWidth;
-				border-color: @mainNavItemCurrentBorderColor;
-				border-style: @mainNavItemCurrentBorderStyle;
-			}
+		&.current_page_item a{
+			padding: @mainNavItemCurrentPadding;
+			border-width: @mainNavItemCurrentBorderWidth;
+			border-color: @mainNavItemCurrentBorderColor;
+			border-style: @mainNavItemCurrentBorderStyle;
 		}
 	}
 }
