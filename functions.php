@@ -119,11 +119,7 @@ class BootKick{
 		
 		/** Styles **/
 		wp_register_style(self::$name, get_stylesheet_uri(), false, self::$version, 'screen' );
-		if(get_bloginfo('template_directory') == get_bloginfo('stylesheet_directory')){
-			wp_register_style(self::$name.'-less', get_bloginfo('template_directory').'/css/style.less', false, self::$version, 'screen' );
-		}else{
-			wp_register_style(self::$name.'-less', get_bloginfo('stylesheet_directory').'/css/style.less', false, self::$version, 'screen' );
-		}
+		wp_register_style(self::$name.'-less', get_bloginfo('stylesheet_directory').'/css/style.less', false, self::$version, 'screen' );
 		/** Scripts **/
 		wp_register_script( 'html5', 'http://html5shim.googlecode.com/svn/trunk/html5.js');
 		wp_register_script( 'less.js', get_bloginfo('template_url').'/lib/less.js/dist/less-1.3.0.min.js');
