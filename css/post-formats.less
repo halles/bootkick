@@ -1,0 +1,189 @@
+.post-formats(){
+
+	.post-container{
+		margin-bottom: 70px;
+		width: 100%;
+		float: left;
+		.post-header{
+			margin-bottom: 20px;
+			font-size: 85%;
+			h1{
+				margin-bottom: 10px;
+				a{ text-decoration: none; }
+			}
+			time, address{
+				.inline-block;
+			}
+		}
+		.post-meta{
+			font-size: 11px;
+		}
+		.post-footer{
+			width: 100%;
+			float: left;
+		}
+		.post-pagination{
+			float: left;
+			width: 100%;
+			text-align: center;
+			padding: 10px 0;
+			a{
+				text-decoration: none;
+				padding: 2px 4px;
+				background: @grayLighter;
+				&:hover{
+					background: darken(@grayLighter,10%);
+				}
+			}
+		}
+		.post-taxonomy{
+			width: 100%;
+			float: left;
+			border-top: 1px solid darken(@grayLighter,10%);
+			border-bottom: 1px solid darken(@grayLighter,10%);
+			background: @grayLighter;
+			padding: 10px 0px;
+			font-size: 12px;
+			margin: 10px 0;
+			div{
+				padding: 0 10px;
+			}
+		}
+	}
+
+	.post-content{
+		
+		width: 100%;
+		float: left;
+		
+		h1, h2, h3, h4, h5, h6 {
+			margin-bottom: 20px;
+		}
+	
+		p{
+			line-height: 1.6em;
+			margin: 0 0 1em 0;
+		}
+		
+		.wp-caption{
+			font: @captionFont;
+			text-align: center;
+			border: @captionBorder;
+			padding: @captionPadding;
+			margin: @captionMargin;
+			.wp-caption-text{
+				margin: 0;
+				padding: 0;
+				color: @captionColor;
+			}
+			img{
+				margin: 0;
+			}
+			&.alignnone{
+				margin: @captionMargin 0;
+			}
+			&.aligncenter{
+				margin: @captionMargin auto;
+			}
+			&.alignleft{
+				float: left;
+				margin-left: 0;
+			}
+			&.alignright{
+				float: right;
+				margin-right: 0;
+			}
+		}
+		
+		img{
+			margin: 0px;
+			&.size-thumbnail,
+			&.size-thumbnail.alignnone{
+				margin: @imageMargin;
+			}
+			&.size-full{
+				max-width: 100%;
+				height: auto;
+			}
+			&.alignnone{
+				margin: 0;
+			}
+			&.aligncenter{
+				margin: 0px auto;
+				display: block;
+			}
+			&.alignleft{
+				float: left;
+				margin-right: @imageMargin;
+			}
+			&.alignright{
+				float: left;
+				margin-left: @imageMargin;
+				float: right;
+				margin-right: 0;
+			}
+		}
+		
+		pre, code{
+			margin-bottom: 2em;
+			font-family: @fixedWidthFontFamily;
+			font-size:   @fixedWidthFontSize;
+			font-weight: @fixedWidthFontWeight;
+			font-weight: inherit;
+			overflow-x: auto; /* Use horizontal scroller if needed; for Firefox 2, not needed in Firefox 3 */
+			white-space: pre-wrap; /* css-3 */
+			white-space: -moz-pre-wrap !important; /* Mozilla, since 1999 */
+			white-space: -pre-wrap; /* Opera 4-6 */
+			white-space: -o-pre-wrap; /* Opera 7 */
+			/*messes up flow* width: 99%; /* remove horizontal scroll-bar when viewing in IE7 */
+			word-wrap: break-word; /* Internet Explorer 5.5+ */
+		}
+		
+		pre{
+			border: 1px solid darken(@grayLighter, 10%);
+			padding: 1em;
+		}
+		
+		code{
+			background:  darken(@grayLighter, 10%);
+			padding: 2px;
+		}
+		
+		sub, sup, small{
+			font-size: 85%;
+		}
+	
+	}
+	
+	.pagination{
+		width: 100%;
+		float: left;
+		text-align: center;
+		margin: 30px 0;
+		.prev a,
+		.next a{
+			font-size: 16px;
+			padding: 10px;
+			text-decoration: none;
+			background: @grayLighter;
+			.border-radius(6px);
+			color: black;
+			&:hover{
+				background: darken(@grayLighter, 5%);
+			}	
+		}
+		.prev{
+			float: left;
+		}
+		.next{
+			float: right;
+		}
+	}
+	
+	.post-pagination{
+		.inline-block;
+		width: 100%;
+		float: left;
+	}
+
+}
