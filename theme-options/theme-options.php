@@ -25,7 +25,7 @@ function bootkickThemeOptions(){
 		//Lets leave this as a blank section, no options just some intro text set above.
 		'fields' => array(
 			array(
-				'id' => 'bkopt-less.js',
+				'id' => 'less.js',
 				'type' => 'checkbox',
 				'title' => __('Less.js', BootKick::$textDomain),
 				'sub_desc' => __('Utiliza el compilador de Less original. Esto permite realizar cambios en los estilos y ver las modificaciones en vivo. No se recomienda utilizarlo con el sitio en producción.', BootKick::$textDomain),
@@ -33,7 +33,7 @@ function bootkickThemeOptions(){
 				'std' => '1',
 			),
 			array(
-				'id' => 'bkopt-less-php-compile',
+				'id' => 'less-php-compile',
 				'type' => 'checkbox',
 				'title' => __('Compilar CSS', BootKick::$textDomain), 
 				'sub_desc' => __('Compila el CSS desde LESS utilizando phpless', BootKick::$textDomain),
