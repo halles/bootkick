@@ -13,6 +13,7 @@ function bootkickThemeOptions(){
 	$args['menu_title'] = __('BootKick Options', BootKick::$textDomain);
 	$args['page_title'] = __('BootKick Theme Options', BootKick::$textDomain);
 	$args['page_slug'] = 'bootkick_options';
+	$args['page_position'] = null;
 
 	$sections = array();
 
