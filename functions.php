@@ -7,7 +7,6 @@ class BootKick{
 	private static $name = 'BootKick';
 	private static $version = '0.1.0';
 	
-	public static $textDomain = 'bootkick';
 	public static $excerpt_length = null; 
 
 	function afterSetupTheme(){
@@ -46,10 +45,10 @@ class BootKick{
 	function registerSidebars(){
 	
 		$sidebars = array(
-			'main' => __('Main Sidebar', self::$textDomain),
-			'footer-1' => __('Footer 1', self::$textDomain),
-			'footer-2' => __('Footer 2', self::$textDomain),
-			'footer-3' => __('Footer 3', self::$textDomain),
+			'main' => __('Main Sidebar', 'bootkick'),
+			'footer-1' => __('Footer 1', 'bootkick'),
+			'footer-2' => __('Footer 2', 'bootkick'),
+			'footer-3' => __('Footer 3', 'bootkick'),
 		);
 		
 		foreach($sidebars as $id => $name){
@@ -106,9 +105,9 @@ class BootKick{
 	function registerMenus(){
 		
 		if ( function_exists( 'register_nav_menu' )){
-			register_nav_menu( 'main', __('Main Menu', self::$textDomain) );
-			register_nav_menu( 'secondary', __('Secondary Menu', self::$textDomain) );
-			register_nav_menu( 'footer', __('Footer Menu', self::$textDomain) );
+			register_nav_menu( 'main', __('Main Menu', 'bootkick') );
+			register_nav_menu( 'secondary', __('Secondary Menu', 'bootkick') );
+			register_nav_menu( 'footer', __('Footer Menu', 'bootkick') );
 		}
 		
 	}

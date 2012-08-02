@@ -19,7 +19,7 @@
 			</section>
 			<?php endif; ?>
 			<section class="signature">
-				<?php _e('Este sitio funciona gracias a <a href="http://www.wordpress.org/" title="WordPress">WordPress</a> y <a href="https://github.com/ZoupPowered/bootkick/" title="Bootkick™ Wordpress Theme">Bootkick™</a> Wordpress Theme :)', BootKick::$textDomain) ?>
+				<?php _e('Este sitio funciona gracias a <a href="http://www.wordpress.org/" title="WordPress">WordPress</a> y <a href="https://github.com/ZoupPowered/bootkick/" title="Bootkick™ Wordpress Theme">Bootkick™</a> Wordpress Theme :)', 'bootkick'); ?>
 			</section>
 		</div>
 	</footer>

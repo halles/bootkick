@@ -2,10 +2,10 @@
 
 <div class="comments-navigation">
 	<div class="prev">
-		<?php previous_comments_link( __( '<span>«</span> Comentarios Anteriores', BootKick::$textDomain ) ); ?>
+		<?php previous_comments_link( __( '<span>«</span> Comentarios Anteriores', 'bootkick' ) ); ?>
 	</div>
 	<div class="next">
-		<?php next_comments_link( __( 'Comentarios Nuevos <span>»</span>', BootKick::$textDomain ) ); ?>
+		<?php next_comments_link( __( 'Comentarios Nuevos <span>»</span>', 'bootkick' ) ); ?>
 	</div>
 </div>
 

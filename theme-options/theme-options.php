@@ -7,19 +7,19 @@ function bootkickThemeOptions(){
 	$args = array();
 
 	//Add HTML before the form
-	$args['intro_text'] = __('<p>Algunas opciones configurables del theme</p>', BootKick::$textDomain);
+	$args['intro_text'] = __('<p>Algunas opciones configurables del theme</p>', 'bootkick');
 
 	$args['opt_name'] = 'bootkick';
-	$args['menu_title'] = __('BootKick Options', BootKick::$textDomain);
-	$args['page_title'] = __('BootKick Theme Options', BootKick::$textDomain);
+	$args['menu_title'] = __('BootKick Options', 'bootkick');
+	$args['page_title'] = __('BootKick Theme Options', 'bootkick');
 	$args['page_slug'] = 'bootkick_options';
 	$args['page_position'] = null;
 
 	$sections = array();
 
 	$sections[] = array(
-		'title' => __('Less', BootKick::$textDomain),
-		'desc' => __('<p class="description">Configura las utilización de Less.js u otro como compilador de los estilos</p>', BootKick::$textDomain),
+		'title' => __('Less', 'bootkick'),
+		'desc' => __('<p class="description">Configura las utilización de Less.js u otro como compilador de los estilos</p>', 'bootkick'),
 		//all the glyphicons are included in the options folder, so you can hook into them, or link to your own custom ones.
 		//You dont have to though, leave it blank for default.
 		'icon' => null,
@@ -28,16 +28,16 @@ function bootkickThemeOptions(){
 			array(
 				'id' => 'less.js',
 				'type' => 'checkbox',
-				'title' => __('Less.js', BootKick::$textDomain),
-				'sub_desc' => __('Utiliza el compilador de Less original. Esto permite realizar cambios en los estilos y ver las modificaciones en vivo. No se recomienda utilizarlo con el sitio en producción.', BootKick::$textDomain),
-				'desc' => __('Utilizar less.js para compilar estilos', BootKick::$textDomain),
+				'title' => __('Less.js', 'bootkick'),
+				'sub_desc' => __('Utiliza el compilador de Less original. Esto permite realizar cambios en los estilos y ver las modificaciones en vivo. No se recomienda utilizarlo con el sitio en producción.', 'bootkick'),
+				'desc' => __('Utilizar less.js para compilar estilos', 'bootkick'),
 				'std' => '1',
 			),
 			array(
 				'id' => 'less-php-compile',
 				'type' => 'checkbox',
-				'title' => __('Compilar CSS', BootKick::$textDomain), 
-				'sub_desc' => __('Compila el CSS desde LESS utilizando phpless', BootKick::$textDomain),
+				'title' => __('Compilar CSS', 'bootkick'), 
+				'sub_desc' => __('Compila el CSS desde LESS utilizando phpless', 'bootkick'),
 				'desc' => __('Compilar CSS'),
 				'validate_callback' => 'compile_css',
 			)

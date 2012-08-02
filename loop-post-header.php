@@ -9,7 +9,7 @@
 			</a>
 		</time>
 		<address class="vcard author">
-			<?php _e('por', BootKick::$textDomain); ?> <a class="url fn" href="<?php the_author_meta('user_url'); ?>"><?php the_author(); ?></a>
+			<?php _e('por', 'bootkick'); ?> <a class="url fn" href="<?php the_author_meta('user_url'); ?>"><?php the_author(); ?></a>
 		</address>
 	</div>
 

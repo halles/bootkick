@@ -5,11 +5,11 @@
 	<div class="post-taxonomy">
 	
 		<div class="post-category">
-			<?php _e('Artículo publicado en ', BootKick::$textDomain); ?> <?php the_category(', '); ?>
+			<?php _e('Artículo publicado en ', 'bootkick'); ?> <?php the_category(', '); ?>
 		</div>
 		
 		<div class="post-tag">
-			<?php the_tags(__('Tags: ', BootKick::$textDomain), ', ', ''); ?>
+			<?php the_tags(__('Tags: ', 'bootkick'), ', ', ''); ?>
 		</div>
 	
 	</div>
