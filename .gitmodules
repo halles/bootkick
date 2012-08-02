@@ -3,4 +3,4 @@
 	url = git://github.com/cloudhead/less.js.git
 [submodule "lib/theme-options"]
 	path = lib/theme-options
-	url = git://github.com/leemason/NHP-Theme-Options-Framework.git
+url=git://github.com/ZoupPowered/NHP-Theme-Options-Framework.git
