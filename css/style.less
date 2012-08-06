@@ -1,17 +1,26 @@
 /* Load Bootkick Files */
 
-@import "../../bootkick/css/bootstrap.less";
+@import "load.less";
 
-@import '../../bootkick/css/reset.less';
-@import '../../bootkick/css/variables.less';
-@import '../../bootkick/css/extras.less';
-@import '../../bootkick/css/addons.less';
+#header,
+#footer{
+	& > .wrap{
+		.column-container(@gridColumns, @gridColumnWidth, @gridGutterWidth)
+	}
+}
 
-@import '../../bootkick/css/typography.less';
-@import '../../bootkick/css/post-formats.less';
-@import '../../bootkick/css/post-comments.less';
-@import '../../bootkick/css/forms.less';
-@import '../../bootkick/css/print.less';
+#content-wrapper{
+	& > #content-subwrapper{
+		.column-container(@gridColumns, @gridColumnWidth, @gridGutterWidth)
+	}
+}
 
-@import '../../bootkick/css/structure.less';
-@import '../../bootkick/css/header.less';
+section.content{
+	.columns(9);
+	float: left;
+}
+
+aside{
+	.columns(3);
+	float: right;
+}
